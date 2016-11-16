@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+</head>
+<body style="background: #e8e3df">
+	
+	<div class="container row">
+		<div class="ten columns">
+			<div class="profile-card">
+				<div class="profile-card-img-wrapper">
+					<div class="profile-card-img profile-card-img-with-transition" style="background-image:url('img/profile.jpeg')"></div>
+					<div class="profile-card-meta-wraper">
+						<p class="profile-card-meta profile-card-meta-title">John Smith</p>
+						<p class="profile-card-meta profile-card-meta-handle">@johnSmith</p>
+					</div>
+				</div>
+				<div class="profile-card-menu profile-card-menu-with-transition">
+					<ul class="block-list profile-card-menu-content">
+						<li class="profile-card-link profile-card-link-with-transition"><a class="profile-card-link-item" href="">Lorem ipsum</a></li>
+						<li class="profile-card-link profile-card-link-with-transition"><a class="profile-card-link-item" href="">Eta vora</a></li>
+						<li class="profile-card-link profile-card-link-with-transition"><a class="profile-card-link-item" href="">Omnis iste</a></li>
+					</ul>
+				</div>
+				<div class="profile-card-content-wrapper">
+					<a href="" class="profile-card-menu-btn profile-card-menu-btn-with-transition">
+						<span class="text-hidden">
+							Show menu
+						</span>
+					</a>
+					<div class="profile-card-stats-wrapper clearfix">
+						<div class="profile-card-stat">
+							<p class="profile-card-stat-text profile-card-stat-text-title">Tweets</p>
+							<p class="profile-card-stat-text profile-card-stat-text-number" data-count="2000">1377</p>
+						</div>
+						<div class="profile-card-stat">
+							<p class="profile-card-stat-text profile-card-stat-text-title">Following</p>
+							<p class="profile-card-stat-text profile-card-stat-text-number" data-count="600">561</p>
+						</div>
+						<div class="profile-card-stat">
+							<p class="profile-card-stat-text profile-card-stat-text-title">Followers</p>
+							<p class="profile-card-stat-text profile-card-stat-text-number" data-count="800">718</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container row">
+		<div class="ten columns text-center">
+			<a href="" class="btn profile-card-data-btn profile-card-data-btn-with-transition">Update data</a>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/dist/js.min.js"></script>
+	<script>
+		profileCard.init();
+	</script>
+</body>
+</html>

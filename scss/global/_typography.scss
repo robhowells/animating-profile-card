@@ -1,0 +1,82 @@
+/*========================================
+
+	Typography Styles
+	_____________
+
+========================================*/
+
+@mixin body-font {
+	font-weight: 400;
+	font-family: 'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+@mixin body-font-bold {
+	font-weight: 600;
+	font-family: 'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+@mixin heading-font {
+	@include body-font;
+}
+
+@mixin heading-font-bold {
+	font-family: 'Bold Font Name TBC', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+body {
+	@include body-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 1.2;
+	margin-bottom: .5em;
+	@include heading-font;
+}
+
+h1 {
+	@include rf(normal desktop small-desktop phablet, 28 25 22 20);
+}
+
+h2 {
+	@include rf(normal desktop small-desktop, 18 16 15);
+}
+
+h3 {
+	@include rf(normal desktop phablet mobile, 15 14 13 12);
+}
+
+h4 {
+	@include rf(normal desktop phablet, 14 13 12);
+}
+
+ul,
+ol {
+	margin-left: 20px;
+}
+
+p,
+li,
+a {
+	line-height: 1.5;
+	margin-bottom: 1em;
+	@include rf(normal desktop phablet, 14 13 12);
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+p,
+li,
+a {
+	color: $primary;
+}
+
+a {
+	color: $white-default;
+	text-decoration: none;
+}
